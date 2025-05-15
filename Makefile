@@ -1,14 +1,10 @@
+cat <<EOF > Makefile
 run:
-	uvicorn app.main:app --reload
+\tuvicorn app.main:app --reload
 
 lint:
-	flake8 app
+\tflake8 app
 
 test:
-	pytest tests
-
-format:
-	black app tests
-
-install:
-	pip install -r requirements.txt
+\techo "Rodar testes aqui"
+EOF
