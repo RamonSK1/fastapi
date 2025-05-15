@@ -1,10 +1,10 @@
-cat <<EOF > Makefile
+
 run:
-\tuvicorn app.main:app --reload
+  uvicorn app.main:app --reload
 
 lint:
-\tflake8 app
+  flake8 app
 
 test:
-\techo "Rodar testes aqui"
-EOF
+  echo "Rodar testes aqui"
+
